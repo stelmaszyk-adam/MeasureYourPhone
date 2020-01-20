@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <TextView style="@style/WidgetButtonVerticalSpace" />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/WidgetTextView.Big"
+        android:text="@string/app_name_widget"/>
+
+    <TextView style="@style/WidgetButtonVerticalSpace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView style="@style/WidgetButtonHorizontalSpace" />
+
+        <LinearLayout
+            android:id="@+id/ristretto_button"
+            style="@style/WidgetBeverageButton" >
+
+            <ImageView
+                style="@style/WidgetButtonImage"
+                android:src="@drawable/truck" />
+            <TextView
+                style="@style/WidgetButtonText"
+                android:text="@string/garbage_collector_widget_text"
+                android:id="@+id/garbage_collector_text_widget"/>
+
+        </LinearLayout>
+
+        <TextView style="@style/WidgetButtonHorizontalSpace" />
+
+        <LinearLayout
+            android:id="@+id/espresso_button"
+            style="@style/WidgetBeverageButton">
+
+            <ImageView
+                style="@style/WidgetButtonImage"
+                android:src="@drawable/battery" />
+            <TextView
+                style="@style/WidgetButtonText"
+                android:text="@string/battery_widget_text"
+                android:id="@+id/battery_text_widget"/>
+
+        </LinearLayout>
+
+        <TextView style="@style/WidgetButtonHorizontalSpace" />
+
+        <LinearLayout
+            android:id="@+id/long_button"
+            style="@style/WidgetBeverageButton" >
+
+            <ImageView
+                style="@style/WidgetButtonImage"
+                android:src="@drawable/ram" />
+            <TextView
+                style="@style/WidgetButtonText"
+                android:text="@string/ram_widget_text"
+                android:id="@+id/ram_text_widget"/>
+
+        </LinearLayout>
+
+        <TextView style="@style/WidgetButtonHorizontalSpace" />
+
+    </LinearLayout>
+
+    <TextView style="@style/WidgetButtonVerticalSpace" />
+
+    <TextView
+        android:id="@+id/coffee_quote"
+        style="@style/WidgetQuote" />
+
+</LinearLayout>

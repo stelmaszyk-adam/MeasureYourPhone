@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ControllerApp</string>
+    <string name="app_name_widget">Controller App</string>
+    <string name="appwidget_text">Controller App</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="ram_widget_text">Ram</string>
+    <string name="battery_widget_text">Battery</string>
+    <string name="garbage_collector_widget_text">Garbage Collector</string>
+
+    <string name="buttonActiveAdminMode">Admin Mode</string>
+</resources>
